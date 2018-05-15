@@ -1,0 +1,43 @@
+.image{
+   width: 20px; 
+   height: 20px; 
+ }
+ .image1{
+   width: 100%; 
+   height: 300rpx; 
+ }
+ .container{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   background-color: #eeeeee
+ }
+ .my{
+   width: 100%;
+   margin-top: 20px;
+   background-color:#FFFFFF;
+ }
+ .mypub{
+    margin: 10px;
+    margin-top: 20px;
+    height: 100rpx;
+    width: 100%;
+    background-color:#FFFFFF;
+ }
+ .myrate{
+    margin: 20px;
+    width: 100%;
+    height: 100rpx;
+    background-color:#FFFFFF;
+ }
+ .set{
+    background-color:#FFFFFF;
+    margin: 20px;
+    width: 100%;
+    height: 100rpx;
+ }
+ .font{
+   font-size: 15px;
+   text-align: center;
+   padding-bottom: 15px;
+ }

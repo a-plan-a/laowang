@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/location/location",
+    "pages/addCgi/addCgi",
+    "pages/publish/publish",
+    "pages/chat/chat",
+    "pages/master/master",
+    "pages/feed/feed",
+    "pages/my/my",
+    "pages/login/login"
+    
+  ],
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "老王",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#ddddd",
+    "borderStyle": "black",
+    "selectedColor": "#9999FF",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath": "pages/index/user-unlogin.png",
+        "selectedIconPath": "pages/index/user-unlogin.png",
+        "text":"首页"
+        
+      },
+      {
+        "pagePath": "pages/feed/feed",
+        "iconPath": "pages/index/user-unlogin.png",
+        "selectedIconPath": "pages/index/user-unlogin.png",
+        "text": "邻里动态"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "iconPath": "pages/index/user-unlogin.png",
+        "selectedIconPath": "pages/index/user-unlogin.png",
+        "text": "发布"
+      }
+      ,
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "pages/index/user-unlogin.png",
+        "selectedIconPath": "pages/index/user-unlogin.png",
+        "text": "我的"
+      }
+    ]
+    ,
+    "position": "bottom"
+  }
+}

@@ -1,0 +1,25 @@
+<view class='publish'>
+  <view class='pub-1'>
+    <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+    <navigator url="../master/master" hover-class="navigator-hover">
+  <text>推荐师父</text>
+  </navigator>
+  <view>
+  <text class='font'>靠谱、靠谱、靠谱</text>
+  </view>
+  </view>
+   <view class='pub-1'>
+     <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+      <navigator url="../chat/chat" hover-class="navigator-hover">
+   <text>随便聊聊</text>
+   </navigator>
+    <view>
+       <view class='font'>
+     <text class='font'> 晒晒新鲜事、聊聊家常</text>
+       </view>
+   </view>
+   </view>
+   <view class='cancel'>
+       <button size='20' open-type="contact font">取消</button>
+   </view>
+</view>

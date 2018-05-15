@@ -1,0 +1,181 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='top'>
+    <view class='location'>
+      <view>
+        <image class='image1' mode="aspectFill" src="../../img/marker_red.png"></image>
+      </view>
+      <view>
+      <navigator url="../location/location" hover-class="navigator-hover">
+        <text class="font">{{title}}</text>
+        </navigator>
+      </view>
+      <view>
+        <text style="padding-left:5px;font-size:10px">></text>
+      </view>
+    </view>
+    <view class="search">
+      <navigator url="../location/location" hover-class="navigator-hover">
+      <icon type="search" size="20" />
+      <text class="font">请输入关键字</text>
+        </navigator>
+    </view>
+  </view>
+  <view>
+    <view class="center">
+      <view class="categroy">
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">银行</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">医院</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">物业</text>
+
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">教育</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">开换锁</text>
+        </view>
+      </view>
+      <view class="categroy">
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">搬家</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">修数码</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">修手机</text>
+
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">修电脑</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">修水电</text>
+        </view>
+      </view>
+       <view class="categroy">
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">修鞋</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">修家具</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">修家电</text>
+
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">疏管道</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">修房屋</text>
+        </view>
+      </view>
+       <view class="categroy">
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">搬家</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">修数码</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">修手机</text>
+
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">修电脑</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">修水电</text>
+        </view>
+      </view>
+       <view class="categroy">
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">鲜花绿植</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">保姆月嫂</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">保洁清洗</text>
+
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">搬家</text>
+        </view>
+        <view class='bank'>
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">回收</text>
+        </view>
+      </view>
+      <view>
+
+      </view>
+    </view>
+   <!--
+    <view class="userinfo" bindtap="login">
+        <image
+            class="userinfo-avatar"
+            src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"
+            background-size="cover"
+        ></image>
+        <view>
+            <text class="userinfo-nickname">{{logged ? userInfo.nickName : '点击测试登录接口'}}</text>
+            <text class="userinfo-nickname" wx:if="{{logged}}">{{userInfo.lastLoginTime}}</text>
+        </view>
+    </view>
+    <view class="uploader">
+        <view class="uploader-text" bindtap="doUpload">
+            <text>上传图片</text>
+        </view>
+        <view class="uploader-container" wx:if="{{imgUrl}}">
+            <image
+                class="uploader-image"
+                src="{{imgUrl}}"
+                mode="aspectFit"
+                bindtap="previewImg"
+            ></image>
+        </view>
+    </view>
+
+
+   
+    <view class="uploader">
+        <navigator url="../addCgi/addCgi" open-type="navigate" class="uploader-text">
+            <text>快速增加 CGI</text>
+        </navigator>
+    </view>
+      -->
+  </view>
+
+</view>

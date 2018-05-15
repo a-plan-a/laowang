@@ -1,0 +1,71 @@
+<view>
+     <view>
+      <image class='image1' mode="aspectFill" src="../index/user-unlogin.png"></image>
+     </view>
+     <view class='line'>
+         <view class='headimage'>
+          <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+         </view>
+         <view class='content'>
+             <view class='name'>
+                 152****9150
+             </view>
+             <view class="text">
+               <text>11111</text>
+             </view>
+             <view class="images">
+              <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+             </view>
+         </view>
+     </view>
+      <view class='line'>
+         <view class='headimage'>
+          <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+         </view>
+         <view class='content'>
+             <view class='name'>
+                 152****9150
+             </view>
+             <view class="text">
+               <text>11111</text>
+             </view>
+             <view class="images">
+              <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+             </view>
+         </view>
+     </view>
+      <view class='line'>
+         <view class='headimage'>
+          <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+         </view>
+         <view class='content'>
+             <view class='name'>
+                 152****9150
+             </view>
+             <view class="text">
+               <text>11111</text>
+             </view>
+             <view class="images">
+              <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+             </view>
+         </view>
+     </view>
+      <view class='line'>
+         <view class='headimage'>
+          <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+         </view>
+         <view class='content'>
+             <view class='name'>
+                 152****9150
+             </view>
+             <view class="text">
+               <text>11111</text>
+             </view>
+             <view class="images">
+              <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+             </view>
+         </view>
+     </view>
+     
+
+</view>

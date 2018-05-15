@@ -1,0 +1,29 @@
+
+.publish{
+  margin-left: 150px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+   width: 10px; 
+   height: 10px; 
+   background-color: #eeeeee;
+}
+.pub-1{
+   margin-top: 25px;
+   width: 100px; 
+   height: 100px; 
+}
+.image{
+   width: 20px; 
+   height: 20px; 
+   background-color: #eeeeee;
+ }
+ .font{
+   font-size: 10px;
+ }
+ .cancel
+ {
+   margin-top: 50px;
+   width: 80px;
+   height: 10px;
+ }

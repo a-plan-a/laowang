@@ -1,0 +1,21 @@
+<view class='container'>
+     <view class='my'>
+      <image class='image1' mode="aspectFill" src="../index/user-unlogin.png"></image>
+     </view>
+      <view class='mypub'>
+       <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+       <text  class="font">我的发布</text>
+     </view>
+      <view class='myrate'>
+        <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+       <text class="font">我的评价</text>
+     </view>
+      <view class='myrate'>
+        <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+       <text class="font">我的收藏</text>
+     </view>
+      <view class='set'>
+       <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
+       <text  class="font">设置</text>
+     </view>
+</view>

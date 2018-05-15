@@ -1,0 +1,51 @@
+<view>
+  <view class="search">
+    <view>
+      <navigator url="../location/location" hover-class="navigator-hover">
+        <icon type="search" size="20" />
+        <text class="font">请输入关键字</text>
+      </navigator>
+    </view>
+    <view>
+           <navigator url="../location/location" hover-class="navigator-hover">
+          <text class="font">{{city}}></text>
+           </navigator>
+    </view>
+  </view>
+  <view class="near">
+    <text class="font-1">附近小区</text> 
+    <view wx:for="{{markers}}" class="house">
+
+     <text class="font">{{item.title}}</text> 
+    </view>
+  </view>
+  <view class="recommended">
+  <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"> 
+  <text>手机号</text></button>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<view class="userinfo" bindtap="login">
+
+
+
+
+  <image class="userinfo-avatar" src="{{logged ? userInfo.avatarUrl : '../index/user-unlogin.png'}}" background-size="cover"></image>
+  <view>
+    <text class="userinfo-nickname">{{logged ? userInfo.nickName : '登录'}}</text>
+    <text class="userinfo-nickname" wx:if="{{logged}}">{{userInfo.lastLoginTime}}</text>
+  </view>
+</view>
