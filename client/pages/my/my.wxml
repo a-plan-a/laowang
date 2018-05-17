@@ -18,4 +18,7 @@
        <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
        <text  class="font">设置</text>
      </view>
+      <view class='set'>
+        <button class='set' open-type="contact">我的客服</button>
+     </view>
 </view>

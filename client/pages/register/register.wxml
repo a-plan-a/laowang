@@ -1,0 +1,16 @@
+<view>
+   <view class="phone">
+   <text>手机号：</text>
+   <input  maxlength="10" class='font' placeholder="最大输入长度10" />
+    <button bindtap="setDisabled" class='font'>微信授权一键登录</button>
+   </view>
+    <view class="validcode">
+    <text>验证码：</text>
+   <input  class='font' maxlength="10" placeholder="最大输入长度10" />
+   <button class='font' bindtap="setDisabled" class='font'>发送验证码</button>
+   </view>
+    <view class="validcode">
+   
+   <button bindtap="validation" class='submit'>提交</button>
+   </view>
+</view>

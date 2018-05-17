@@ -1,0 +1,33 @@
+.font{
+  font-size: 30rpx;
+}
+.row{
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.row1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+ background-color: #eeeeee;
+
+}
+.uploader{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.uploader-text {
+    width: 100%;
+    line-height: 52px;
+    font-size: 34rpx;
+}
+
+.uploader-image {
+    width: 100rpx;
+    height: 100rpx;
+}

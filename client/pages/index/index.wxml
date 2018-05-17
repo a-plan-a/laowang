@@ -38,12 +38,16 @@
 
         </view>
         <view class='bank'>
+         <navigator url="../li/li" hover-class="navigator-hover">
           <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
           <text class="font">教育</text>
+           </navigator>
         </view>
         <view class='bank'>
+         <navigator url="../li/li" hover-class="navigator-hover">
           <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
           <text class="font">开换锁</text>
+           </navigator>
         </view>
       </view>
       <view class="categroy">

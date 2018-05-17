@@ -1,0 +1,39 @@
+<form bindsubmit="formSubmit">
+<view class='form'>
+  <view class="uploader">
+    <view bindtap="doUpload">
+      <text class='uploader-text'>拍个照吧</text>
+    </view>
+    <view class="row1">
+      <view wx:for="{{imgUrl}}">
+       <input class='font' hidden='true' name="pics" value='{{imgUrl}}' maxlength='1000' />
+        <image value="{{item}}" class="uploader-image" src="{{item}}" mode="aspectFit" bindtap="previewImg"></image>
+      </view>
+      <view wx:if="{{imgUrl.length>0}}" bindtap="doUpload">
+        <image class="uploader-image" src="../index/user-unlogin.png" mode="aspectFit">
+          <text>追加一张</text>
+        </image>
+      </view>
+    </view>
+  </view>
+  <view class="title row">
+    <text class='font'>标题：</text>
+    <input class='font' name="title" value='' maxlength="10" placeholder="最大输入长度10" />
+  </view>
+  <view class='describe row'>
+    <text class='font'>描述：</text>
+    <rich-text name="describe"></rich-text>
+  </view>
+  <view class='name row'>
+    <text class='font'>姓名：</text>
+    <input class='font' name="name" maxlength="10" placeholder="最大输入长度10" />
+  </view>
+  <view class='phone row'>
+    <text class='font'>手机号：</text>
+    <input class='font' name="phone" maxlength="10" placeholder="最大输入长度10" />
+  </view>
+  <view class='phone row'>
+    <button formType="submit" class='submit'>推荐</button>
+  </view>
+</view>
+</form>

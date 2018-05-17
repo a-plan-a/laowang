@@ -1,0 +1,48 @@
+<view class='list'>
+    <view class='pic'>
+      <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+    </view>
+      <view class='content'>
+            <view>
+                <text class='font'>xxxxxxxxx</text>
+            </view>
+            <view>
+             <text class='font'>王师傅</text>
+            </view>
+    </view>
+      <view class='connect'>
+       <text class='font'>15267059150</text>
+    </view>
+</view>
+<view class='list'>
+    <view class='pic'>
+      <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+    </view>
+      <view class='content'>
+            <view>
+                <text class='font'>xxxxxxxxx</text>
+            </view>
+            <view>
+             <text class='font'>王师傅</text>
+            </view>
+    </view>
+      <view class='connect'>
+       <text class='font'>15267059150</text>
+    </view>
+</view>
+<view class='list'>
+    <view class='pic'>
+      <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+    </view>
+      <view class='content'>
+            <view>
+                <text class='font'>xxxxxxxxx</text>
+            </view>
+            <view>
+             <text class='font'>王师傅</text>
+            </view>
+    </view>
+      <view class='connect'>
+       <text class='font'>15267059150</text>
+    </view>
+</view>

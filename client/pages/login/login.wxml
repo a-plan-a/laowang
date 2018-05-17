@@ -15,14 +15,15 @@
   <view class="near">
     <text class="font-1">附近小区</text> 
     <view wx:for="{{markers}}" class="house">
-
+     <navigator url="../register/register" hover-class="navigator-hover">
      <text class="font">{{item.title}}</text> 
+      </navigator>
     </view>
   </view>
-  <view class="recommended">
+  <!-- <view class="recommended">
   <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"> 
   <text>手机号</text></button>
-  </view>
+  </view> -->
 </view>
 
 
@@ -38,14 +39,10 @@
 
 
 
-<view class="userinfo" bindtap="login">
-
-
-
-
+<!-- <view class="userinfo" bindtap="login">
   <image class="userinfo-avatar" src="{{logged ? userInfo.avatarUrl : '../index/user-unlogin.png'}}" background-size="cover"></image>
   <view>
     <text class="userinfo-nickname">{{logged ? userInfo.nickName : '登录'}}</text>
     <text class="userinfo-nickname" wx:if="{{logged}}">{{userInfo.lastLoginTime}}</text>
   </view>
-</view>
+</view> -->

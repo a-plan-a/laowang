@@ -2,6 +2,7 @@
   "pages":[
     "pages/welcome/welcome",
     "pages/index/index",
+    "pages/recommend/recommend",
     "pages/location/location",
     "pages/addCgi/addCgi",
     "pages/publish/publish",
@@ -9,7 +10,10 @@
     "pages/master/master",
     "pages/feed/feed",
     "pages/my/my",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/li/li",
+    "pages/detail/detail",
+    "pages/register/register"
     
   ],
   "window":{

@@ -1,0 +1,19 @@
+/* pages/register/register.wxss */
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.font{
+  font-size: 20rpx;
+}
+ .image{
+   width: 50px; 
+   height: 50px; 
+   background-color: #eeeeee;
+ }
