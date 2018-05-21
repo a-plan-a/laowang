@@ -1,48 +1,17 @@
-<view class='list'>
+<view class='list' wx:for="{{d}}">
     <view class='pic'>
-      <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+      <image class='image' mode="aspectFill" src="{{item.profilePhoto}}"></image>
     </view>
       <view class='content'>
             <view>
-                <text class='font'>xxxxxxxxx</text>
+                <text class='font'>{{item.title}}</text>
             </view>
             <view>
-             <text class='font'>王师傅</text>
+             <text class='font'>{{item.name}}</text>
             </view>
     </view>
       <view class='connect'>
-       <text class='font'>15267059150</text>
+       <text class='font'>{{item.phone}}</text>
     </view>
 </view>
-<view class='list'>
-    <view class='pic'>
-      <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-    </view>
-      <view class='content'>
-            <view>
-                <text class='font'>xxxxxxxxx</text>
-            </view>
-            <view>
-             <text class='font'>王师傅</text>
-            </view>
-    </view>
-      <view class='connect'>
-       <text class='font'>15267059150</text>
-    </view>
-</view>
-<view class='list'>
-    <view class='pic'>
-      <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-    </view>
-      <view class='content'>
-            <view>
-                <text class='font'>xxxxxxxxx</text>
-            </view>
-            <view>
-             <text class='font'>王师傅</text>
-            </view>
-    </view>
-      <view class='connect'>
-       <text class='font'>15267059150</text>
-    </view>
-</view>
+

@@ -6,7 +6,7 @@
     </view>
     <view class="row1">
       <view wx:for="{{imgUrl}}">
-       <input class='font' hidden='true' name="pics" value='{{imgUrl}}' maxlength='1000' />
+       <input class='font' hidden='true' name="photo" value='{{imgUrl}}' maxlength='1000' />
         <image value="{{item}}" class="uploader-image" src="{{item}}" mode="aspectFit" bindtap="previewImg"></image>
       </view>
       <view wx:if="{{imgUrl.length>0}}" bindtap="doUpload">
@@ -22,7 +22,7 @@
   </view>
   <view class='describe row'>
     <text class='font'>描述：</text>
-    <rich-text name="describe"></rich-text>
+   <textarea name="detail" />
   </view>
   <view class='name row'>
     <text class='font'>姓名：</text>

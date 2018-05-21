@@ -5,13 +5,38 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    d:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    var no = options.categoryno
+
+    wx.request({
+      url: 'http://127.0.0.1:8080/recommend/'+no+'',
+      data: {
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        var l = JSON.parse(res.data.result);
+        that.setData({
+          d: l
+        })
+      },
+      fail: function (res) {
+        console.log(res.data)
+        wx.showToast({
+          title: '失败',
+          icon: 'success',
+          duration: 2000
+        })
+      }
+    })
   
   },
 

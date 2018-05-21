@@ -82,7 +82,7 @@ Page({
       success: function (res) {
         util.showBusy('正在上传')
         for (var index in res.tempFilePaths) {
-         var filePath = res.tempFilePaths[index];
+          var filePath = res.tempFilePaths[index];
           console.log("filePath:" + filePath);
           // 上传图片
           wx.uploadFile({
@@ -90,14 +90,14 @@ Page({
             filePath: filePath,
             name: 'file',
             success: function (res) {
-              var j=i+1;
-              util.showSuccess('第'+j+'张图片上传成功')
+              var j = i + 1;
+              util.showSuccess('第' + j + '张图片上传成功')
               console.log(res)
               res = JSON.parse(res.data)
               console.log(res)
               imgs[i] = res.data.imgUrl
               that.setData({
-                imgUrl:imgs
+                imgUrl: imgs
               })
               i++
             },
@@ -122,6 +122,38 @@ Page({
   }
   ,
   formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    var d = e.detail.value;
+    wx.request({
+      url: 'http://127.0.0.1:8080/recommend',
+      data: {
+        d
+      },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        console.log(res)
+        var status;
+        if (res.data.status == 'success') {
+            status='推荐成功';
+        }
+        else {
+          status ='推荐失败';
+        }
+        wx.showToast({
+          title: status,
+          icon: 'success',
+          duration: 2000
+        })
+      },
+      fail: function (res) {
+        console.log(res.data)
+        wx.showToast({
+          title: '失败',
+          icon: 'success',
+          duration: 2000
+        })
+      }
+    })
   },
 })

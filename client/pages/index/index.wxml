@@ -44,7 +44,7 @@
            </navigator>
         </view>
         <view class='bank'>
-         <navigator url="../li/li" hover-class="navigator-hover">
+         <navigator url="../li/li?categoryno=001" hover-class="navigator-hover">
           <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
           <text class="font">开换锁</text>
            </navigator>
