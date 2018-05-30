@@ -6,8 +6,8 @@
         <image class='image1' mode="aspectFill" src="../../img/marker_red.png"></image>
       </view>
       <view>
-      <navigator url="../location/location" hover-class="navigator-hover">
-        <text class="font">{{title}}</text>
+        <navigator url="../location/location" hover-class="navigator-hover">
+          <text class="font">{{title}}</text>
         </navigator>
       </view>
       <view>
@@ -16,137 +16,24 @@
     </view>
     <view class="search">
       <navigator url="../location/location" hover-class="navigator-hover">
-      <icon type="search" size="20" />
-      <text class="font">请输入关键字</text>
-        </navigator>
+        <icon type="search" size="20" />
+        <text class="font">请输入关键字</text>
+      </navigator>
     </view>
   </view>
   <view>
-    <view class="center">
-      <view class="categroy">
-        <view class='bank'>
+    <view class="center" >
+      <view class="categroy" wx:for="{{categories}}" >
+        <view class='bank' wx:for="{{item}}" >
+          <navigator url="../li/li?categoryNo={{item.categoryNo}}" hover-class="navigator-hover">
           <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">银行</text>
+          <text class="font">{{item.categoryName}}</text>
+         </navigator>
         </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">医院</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">物业</text>
-
-        </view>
-        <view class='bank'>
-         <navigator url="../li/li" hover-class="navigator-hover">
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">教育</text>
-           </navigator>
-        </view>
-        <view class='bank'>
-         <navigator url="../li/li?categoryno=001" hover-class="navigator-hover">
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">开换锁</text>
-           </navigator>
-        </view>
-      </view>
-      <view class="categroy">
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">搬家</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">修数码</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">修手机</text>
-
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">修电脑</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">修水电</text>
-        </view>
-      </view>
-       <view class="categroy">
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">修鞋</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">修家具</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">修家电</text>
-
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">疏管道</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">修房屋</text>
-        </view>
-      </view>
-       <view class="categroy">
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">搬家</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">修数码</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">修手机</text>
-
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">修电脑</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">修水电</text>
-        </view>
-      </view>
-       <view class="categroy">
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">鲜花绿植</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">保姆月嫂</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">保洁清洗</text>
-
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">搬家</text>
-        </view>
-        <view class='bank'>
-          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
-          <text class="font">回收</text>
-        </view>
-      </view>
-      <view>
-
       </view>
     </view>
-   <!--
+  </view>
+  <!--
     <view class="userinfo" bindtap="login">
         <image
             class="userinfo-avatar"
@@ -180,6 +67,4 @@
         </navigator>
     </view>
       -->
-  </view>
-
 </view>

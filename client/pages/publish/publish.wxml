@@ -1,7 +1,7 @@
 <view class='publish'>
   <view class='pub-1'>
     <image class='image' mode="aspectFill" src="../index/user-unlogin.png"></image>
-    <navigator url="../recommend/recommend" hover-class="navigator-hover">
+    <navigator url="../category/category" hover-class="navigator-hover">
   <text>推荐师父</text>
   </navigator>
   <view>

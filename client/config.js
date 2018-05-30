@@ -4,6 +4,9 @@
 
 // 此处主机域名修改成腾讯云解决方案分配的域名
 var host = 'https://iwkvgtsw.qcloud.la';
+//var server_host ='47.104.173.115';
+
+var server_host = '127.0.0.1';
 
 var config = {
 
@@ -21,7 +24,10 @@ var config = {
         tunnelUrl: `${host}/weapp/tunnel`,
 
         // 上传图片接口
-        uploadUrl: `${host}/weapp/upload`
+        uploadUrl: `${host}/weapp/upload`,
+
+        serverHost: `${server_host}`
+        
     }
 };
 

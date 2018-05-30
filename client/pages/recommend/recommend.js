@@ -7,7 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrl: []
+    imgUrl: [],
+    id:''
   },
 
 
@@ -16,6 +17,15 @@ Page({
    */
   onLoad: function (options) {
 
+    var id=options.id;
+    console.log(">>>>>>>"+id);
+    var that=this;
+
+    that.setData({
+      id:id
+    });
+
+    console.log(">>>>>>>" + this.data.id);
   },
 
 
@@ -85,6 +95,7 @@ Page({
           var filePath = res.tempFilePaths[index];
           console.log("filePath:" + filePath);
           // 上传图片
+          console.log("filePath:" + "上传图片" + config.service.uploadUrl);
           wx.uploadFile({
             url: config.service.uploadUrl,
             filePath: filePath,
@@ -123,8 +134,9 @@ Page({
   ,
   formSubmit: function (e) {
     var d = e.detail.value;
+    console.log(d)
     wx.request({
-      url: 'http://127.0.0.1:8080/recommend',
+      url: 'http://' + config.service.serverHost+':8080/recommend/insert',
       data: {
         d
       },

@@ -1,0 +1,8 @@
+ <view class="categroy" wx:for="{{categories}}" >
+        <view class='bank' wx:for="{{item}}" >
+        <navigator url="../recommend/recommend?id={{item.categoryNo}}" hover-class="navigator-hover">
+          <image class='image' mode="aspectFill" src="./user-unlogin.png"></image>
+          <text class="font">{{item.categoryName}}</text>
+          </navigator>
+        </view>
+</view>

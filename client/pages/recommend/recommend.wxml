@@ -1,5 +1,6 @@
 <form bindsubmit="formSubmit">
 <view class='form'>
+ <input  hidden='true' name="categoryID" value='{{id}}' />
   <view class="uploader">
     <view bindtap="doUpload">
       <text class='uploader-text'>拍个照吧</text>

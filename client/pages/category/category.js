@@ -1,28 +1,24 @@
-// pages/li/li.js
+var qcloud = require('../../vendor/wafer2-client-sdk/index')
 var config = require('../../config')
+var util = require('../../utils/util.js')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    d:[]
+    categories:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-    console.log(config.service.serverHost);
     var that = this;
-    var no = options.categoryNo
-
-    console.log(">>>>>>"+no);
-
     wx.request({
-      url: 'http://' + config.service.serverHost+':8080/recommend/'+no+'',
+      url: 'http://' + config.service.serverHost + ':8080/category/all',
       data: {
+
       },
       header: {
         'content-type': 'application/json'
@@ -30,9 +26,27 @@ Page({
       success: function (res) {
         var l = JSON.parse(res.data.result);
         console.log(l);
+        var arry = new Array();
+        for (var j = 0; j < l.length / 4; j++) {
+          arry[j] = new Array();
+        }
+        var a = -1;
+        var b;
+        for (var i in l) {
+          if (i % 4 == 0) {
+            a++;
+            b = 0;
+            arry[a][b] = l[i];
+          }
+          else {
+            b++
+            arry[a][b] = l[i];
+          }
+        }
         that.setData({
-          d: l
+          categories: arry
         })
+
       },
       fail: function (res) {
         console.log(res.data)

@@ -10,11 +10,58 @@ Page({
         logged: false,
         takeSession: false,
         requestResult: '',
-        title:'加载中...'
+        title:'加载中...',
+        categories:[]
 
     },
     onLoad: function () {
-      console.log("onLoad");
+     
+      wx.request({
+        url: 'http://' + config.service.serverHost + ':8080/category/all',
+        data: {
+          
+        },
+        header: {
+          'content-type': 'application/json'
+        },
+        success: function (res) {
+          var l = JSON.parse(res.data.result);
+          console.log(l);
+          var arry=new Array();
+          for(var j=0;j<l.length/4;j++)
+          {
+             arry[j]=new Array();
+          }
+          var a = -1;
+          var b;
+          for(var i in l)
+          {
+               if(i%4==0)
+               {
+                 a++;
+                 b=0;
+                 arry[a][b]=l[i];
+               }
+               else
+               {
+                 b++
+                 arry[a][b] = l[i];
+               }
+          }
+          that.setData({
+            categories: arry
+          })
+         
+        },
+        fail: function (res) {
+          console.log(res.data)
+          wx.showToast({
+            title: '失败',
+            icon: 'success',
+            duration: 2000
+          })
+        }
+      })
       var that = this;
       var BMap = new bmap.BMapWX({
         ak: '79E437b14b41c5720a26e08c25063ad9'
